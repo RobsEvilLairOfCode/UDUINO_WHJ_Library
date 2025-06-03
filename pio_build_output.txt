@@ -1,0 +1,2331 @@
+Processing nucleo_l552ze_q (platform: ststm32; board: nucleo_l552ze_q; framework: stm32cube)
+--------------------------------------------------------------------------------
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/nucleo_l552ze_q.html
+PLATFORM: ST STM32 (18.0.0) > ST Nucleo L552ZE-Q
+HARDWARE: STM32L552ZET6 80MHz, 192KB RAM, 512KB Flash
+DEBUG: Current (stlink) On-board (stlink) External (blackmagic, cmsis-dap, jlink)
+PACKAGES: 
+ - framework-stm32cubel5 @ 1.4.0 
+ - tool-ldscripts-ststm32 @ 0.2.0 
+ - toolchain-gccarmnoneeabi @ 1.70201.0 (7.2.1)
+Found suitable linker scripts: [STM32L552ZETX_FLASH.ld, STM32L552ZETXQ_FLASH.ld], STM32L552ZETX_FLASH.ld will be used!
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 25 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+arm-none-eabi-gcc -o .pio/build/nucleo_l552ze_q/src/gpio.o -c -mthumb -mcpu=cortex-m33 -Os -ffunction-sections -fdata-sections -Wall -nostdlib -DPLATFORMIO=60118 -DSTM32L5 -DSTM32L552xx -DUSE_HAL_DRIVER -DF_CPU=80000000L -Iinclude -Isrc -Isrc -Iinclude -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Src -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/DSP/Include src/gpio.c
+arm-none-eabi-gcc -o .pio/build/nucleo_l552ze_q/src/led.o -c -mthumb -mcpu=cortex-m33 -Os -ffunction-sections -fdata-sections -Wall -nostdlib -DPLATFORMIO=60118 -DSTM32L5 -DSTM32L552xx -DUSE_HAL_DRIVER -DF_CPU=80000000L -Iinclude -Isrc -Isrc -Iinclude -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Src -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/DSP/Include src/led.c
+arm-none-eabi-gcc -o .pio/build/nucleo_l552ze_q/src/stm32l5xx_hal_msp.o -c -mthumb -mcpu=cortex-m33 -Os -ffunction-sections -fdata-sections -Wall -nostdlib -DPLATFORMIO=60118 -DSTM32L5 -DSTM32L552xx -DUSE_HAL_DRIVER -DF_CPU=80000000L -Iinclude -Isrc -Isrc -Iinclude -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Src -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/DSP/Include src/stm32l5xx_hal_msp.c
+arm-none-eabi-gcc -o .pio/build/nucleo_l552ze_q/src/stm32l5xx_it.o -c -mthumb -mcpu=cortex-m33 -Os -ffunction-sections -fdata-sections -Wall -nostdlib -DPLATFORMIO=60118 -DSTM32L5 -DSTM32L552xx -DUSE_HAL_DRIVER -DF_CPU=80000000L -Iinclude -Isrc -Isrc -Iinclude -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Src -I/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/DSP/Include src/stm32l5xx_it.c
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3515:0,
+                 from include/stm32l5xx_hal_conf.h:246,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1890:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_PeriphCLKConfig(RCC_PeriphCLKInitTypeDef  *PeriphClkInit);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1902:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_EnablePLLSAI1(RCC_PLLSAI1InitTypeDef  *PLLSAI1Init);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3515:0,
+                 from include/stm32l5xx_hal_conf.h:246,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1890:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_PeriphCLKConfig(RCC_PeriphCLKInitTypeDef  *PeriphClkInit);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1903:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_DisablePLLSAI1(void);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1902:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_EnablePLLSAI1(RCC_PLLSAI1InitTypeDef  *PLLSAI1Init);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1904:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_EnablePLLSAI2(RCC_PLLSAI2InitTypeDef  *PLLSAI2Init);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1903:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_DisablePLLSAI1(void);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1905:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_DisablePLLSAI2(void);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1904:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_EnablePLLSAI2(RCC_PLLSAI2InitTypeDef  *PLLSAI2Init);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from include/stm32l5xx_hal_conf.h:246:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3528:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_DeInit(void);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3529:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef *RCC_OscInitStruct);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc_ex.h:1905:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCCEx_DisablePLLSAI2(void);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3530:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t FLatency);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from include/stm32l5xx_hal_conf.h:246:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3528:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_DeInit(void);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3564:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_GetConfigAttributes(uint32_t Item, uint32_t *pAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from include/stm32l5xx_hal_conf.h:254:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:122:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef       Lock;                                                           /*!< DMA locking object                   */
+   ^~~~~~~~~~~~~~~
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:657:0,
+                 from include/stm32l5xx_hal_conf.h:254,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:212:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+src/stm32l5xx_hal_msp.c:90:27: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'SPI_HandleTypeDef'?
+ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
+                           ^~~~~~~~~~~~~~~~~
+                           SPI_HandleTypeDef
+src/stm32l5xx_hal_msp.c:116:29: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'SPI_HandleTypeDef'?
+ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* htim_base)
+                             ^~~~~~~~~~~~~~~~~
+                             SPI_HandleTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3529:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef *RCC_OscInitStruct);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:657:0,
+                 from include/stm32l5xx_hal_conf.h:254,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:213:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+*** [.pio/build/nucleo_l552ze_q/src/stm32l5xx_hal_msp.o] Error 1
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:214:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_ChangeMemory(DMA_HandleTypeDef *hdma, uint32_t Address, HAL_DMA_MemoryTypeDef memory);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3530:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t FLatency);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:217:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_ConfigMuxRequestGenerator (DMA_HandleTypeDef *hdma,
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h:3564:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_RCC_GetConfigAttributes(uint32_t Item, uint32_t *pAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from src/stm32l5xx_it.c:23:0:
+include/stm32l5xx_nucleo.h:78:23: error: 'UART_WORDLENGTH_7B' undeclared here (not in a function)
+   COM_WORDLENGTH_7B = UART_WORDLENGTH_7B,
+                       ^~~~~~~~~~~~~~~~~~
+include/stm32l5xx_nucleo.h:79:23: error: 'UART_WORDLENGTH_8B' undeclared here (not in a function); did you mean 'UART_WORDLENGTH_7B'?
+   COM_WORDLENGTH_8B = UART_WORDLENGTH_8B,
+                       ^~~~~~~~~~~~~~~~~~
+                       UART_WORDLENGTH_7B
+include/stm32l5xx_nucleo.h:80:23: error: 'UART_WORDLENGTH_9B' undeclared here (not in a function); did you mean 'UART_WORDLENGTH_8B'?
+   COM_WORDLENGTH_9B = UART_WORDLENGTH_9B
+                       ^~~~~~~~~~~~~~~~~~
+                       UART_WORDLENGTH_8B
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:219:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_EnableMuxRequestGenerator (DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:250:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:334:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HASH_TypeDef'?
+ HAL_StatusTypeDef HAL_GPIO_LockPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
+ ^~~~~~~~~~~~~~~~~
+ HASH_TypeDef
+In file included from include/stm32l5xx_hal_conf.h:254:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:122:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef       Lock;                                                           /*!< DMA locking object                   */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:220:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_DisableMuxRequestGenerator (DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:85:20: error: 'UART_STOPBITS_1' undeclared here (not in a function)
+   COM_STOPBITS_1 = UART_STOPBITS_1,
+                    ^~~~~~~~~~~~~~~
+include/stm32l5xx_nucleo.h:86:20: error: 'UART_STOPBITS_2' undeclared here (not in a function); did you mean 'UART_STOPBITS_1'?
+   COM_STOPBITS_2 = UART_STOPBITS_2
+                    ^~~~~~~~~~~~~~~
+                    UART_STOPBITS_1
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:657:0,
+                 from include/stm32l5xx_hal_conf.h:254,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:212:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:224:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_ConfigMuxSync(DMA_HandleTypeDef *hdma, HAL_DMA_MuxSyncConfigTypeDef *pSyncConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:657:0,
+                 from include/stm32l5xx_hal_conf.h:254,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:213:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:91:21: error: 'UART_PARITY_NONE' undeclared here (not in a function); did you mean 'USART_ISR_RXNE'?
+   COM_PARITY_NONE = UART_PARITY_NONE,
+                     ^~~~~~~~~~~~~~~~
+                     USART_ISR_RXNE
+In file included from include/stm32l5xx_hal_conf.h:254:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:669:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Init(DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:92:21: error: 'UART_PARITY_EVEN' undeclared here (not in a function); did you mean 'UART_PARITY_NONE'?
+   COM_PARITY_EVEN = UART_PARITY_EVEN,
+                     ^~~~~~~~~~~~~~~~
+                     UART_PARITY_NONE
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:670:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_DeInit (DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:214:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_ChangeMemory(DMA_HandleTypeDef *hdma, uint32_t Address, HAL_DMA_MemoryTypeDef memory);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:93:21: error: 'UART_PARITY_ODD' undeclared here (not in a function); did you mean 'UART_PARITY_NONE'?
+   COM_PARITY_ODD  = UART_PARITY_ODD
+                     ^~~~~~~~~~~~~~~
+                     UART_PARITY_NONE
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:679:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Start (DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:217:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_ConfigMuxRequestGenerator (DMA_HandleTypeDef *hdma,
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:680:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Start_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:219:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_EnableMuxRequestGenerator (DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:98:27: error: 'UART_HWCONTROL_NONE' undeclared here (not in a function); did you mean 'UART_PARITY_NONE'?
+   COM_HWCONTROL_NONE    = UART_HWCONTROL_NONE,
+                           ^~~~~~~~~~~~~~~~~~~
+                           UART_PARITY_NONE
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:681:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Abort(DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:220:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_DisableMuxRequestGenerator (DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:99:27: error: 'UART_HWCONTROL_RTS' undeclared here (not in a function); did you mean 'UART_HWCONTROL_NONE'?
+   COM_HWCONTROL_RTS     = UART_HWCONTROL_RTS,
+                           ^~~~~~~~~~~~~~~~~~
+                           UART_HWCONTROL_NONE
+include/stm32l5xx_nucleo.h:100:27: error: 'UART_HWCONTROL_CTS' undeclared here (not in a function); did you mean 'UART_HWCONTROL_RTS'?
+   COM_HWCONTROL_CTS     = UART_HWCONTROL_CTS,
+                           ^~~~~~~~~~~~~~~~~~
+                           UART_HWCONTROL_RTS
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:682:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Abort_IT(DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma_ex.h:224:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMAEx_ConfigMuxSync(DMA_HandleTypeDef *hdma, HAL_DMA_MuxSyncConfigTypeDef *pSyncConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:683:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_PollForTransfer(DMA_HandleTypeDef *hdma, HAL_DMA_LevelCompleteTypeDef CompleteLevel, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:101:27: error: 'UART_HWCONTROL_RTS_CTS' undeclared here (not in a function); did you mean 'UART_HWCONTROL_CTS'?
+   COM_HWCONTROL_RTS_CTS = UART_HWCONTROL_RTS_CTS
+                           ^~~~~~~~~~~~~~~~~~~~~~
+                           UART_HWCONTROL_CTS
+include/stm32l5xx_nucleo.h:223:8: error: unknown type name 'UART_HandleTypeDef'
+ extern UART_HandleTypeDef hcom_uart[COMn];
+        ^~~~~~~~~~~~~~~~~~
+In file included from include/stm32l5xx_hal_conf.h:254:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:669:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Init(DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:274:35: error: unknown type name 'UART_HandleTypeDef'; did you mean 'RTC_HandleTypeDef'?
+ HAL_StatusTypeDef MX_LPUART1_Init(UART_HandleTypeDef* huart, MX_UART_InitTypeDef *MXInit);
+                                   ^~~~~~~~~~~~~~~~~~
+                                   RTC_HandleTypeDef
+In file included from include/stm32l5xx_hal_conf.h:254:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:685:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_RegisterCallback(DMA_HandleTypeDef *hdma, HAL_DMA_CallbackIDTypeDef CallbackID, void (* pCallback)( DMA_HandleTypeDef * _hdma));
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:670:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_DeInit (DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+include/stm32l5xx_nucleo.h:275:34: error: unknown type name 'UART_HandleTypeDef'; did you mean 'RTC_HandleTypeDef'?
+ HAL_StatusTypeDef MX_USART3_Init(UART_HandleTypeDef* huart, MX_UART_InitTypeDef *MXInit);
+                                  ^~~~~~~~~~~~~~~~~~
+                                  RTC_HandleTypeDef
+src/stm32l5xx_it.c:59:8: error: unknown type name 'TIM_HandleTypeDef'
+ extern TIM_HandleTypeDef htim16;
+        ^~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:686:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_UnRegisterCallback(DMA_HandleTypeDef *hdma, HAL_DMA_CallbackIDTypeDef CallbackID);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+src/stm32l5xx_it.c: In function 'TIM16_IRQHandler':
+src/stm32l5xx_it.c:227:3: warning: implicit declaration of function 'HAL_TIM_IRQHandler'; did you mean 'HAL_SPI_IRQHandler'? [-Wimplicit-function-declaration]
+   HAL_TIM_IRQHandler(&htim16);
+   ^~~~~~~~~~~~~~~~~~
+   HAL_SPI_IRQHandler
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:679:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Start (DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+*** [.pio/build/nucleo_l552ze_q/src/stm32l5xx_it.o] Error 1
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:706:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_ConfigChannelAttributes(DMA_HandleTypeDef *hdma, uint32_t ChannelAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:680:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Start_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:707:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_GetConfigChannelAttributes(DMA_HandleTypeDef *hdma, uint32_t *ChannelAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:681:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Abort(DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:286:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:316:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_SetConfigLine(EXTI_HandleTypeDef *hexti, EXTI_ConfigTypeDef *pExtiConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:682:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_Abort_IT(DMA_HandleTypeDef *hdma);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:317:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_GetConfigLine(EXTI_HandleTypeDef *hexti, EXTI_ConfigTypeDef *pExtiConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:683:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_PollForTransfer(DMA_HandleTypeDef *hdma, HAL_DMA_LevelCompleteTypeDef CompleteLevel, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:254:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:685:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_RegisterCallback(DMA_HandleTypeDef *hdma, HAL_DMA_CallbackIDTypeDef CallbackID, void (* pCallback)( DMA_HandleTypeDef * _hdma));
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:318:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_ClearConfigLine(EXTI_HandleTypeDef *hexti);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:686:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_UnRegisterCallback(DMA_HandleTypeDef *hdma, HAL_DMA_CallbackIDTypeDef CallbackID);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:319:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_RegisterCallback(EXTI_HandleTypeDef *hexti, EXTI_CallbackIDTypeDef CallbackID, void (*pPendingCbfn)(void));
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:706:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_ConfigChannelAttributes(DMA_HandleTypeDef *hdma, uint32_t ChannelAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:320:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_GetHandle(EXTI_HandleTypeDef *hexti, uint32_t ExtiLine);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_dma.h:707:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_DMA_GetConfigChannelAttributes(DMA_HandleTypeDef *hdma, uint32_t *ChannelAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:345:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_GetConfigLineAttributes(uint32_t ExtiLine, uint32_t *pLineAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:294:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:114:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef        Lock;              /*!< FLASH locking object */
+   ^~~~~~~~~~~~~~~
+In file included from include/stm32l5xx_hal_conf.h:286:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:316:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_SetConfigLine(EXTI_HandleTypeDef *hexti, EXTI_ConfigTypeDef *pExtiConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:868:0,
+                 from include/stm32l5xx_hal_conf.h:294,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:128:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *PageError);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:317:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_GetConfigLine(EXTI_HandleTypeDef *hexti, EXTI_ConfigTypeDef *pExtiConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:318:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_ClearConfigLine(EXTI_HandleTypeDef *hexti);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:129:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_Erase_IT(FLASH_EraseInitTypeDef *pEraseInit);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:319:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_RegisterCallback(EXTI_HandleTypeDef *hexti, EXTI_CallbackIDTypeDef CallbackID, void (*pPendingCbfn)(void));
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:130:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_OBProgram(FLASH_OBProgramInitTypeDef *pOBInit);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:320:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_GetHandle(EXTI_HandleTypeDef *hexti, uint32_t ExtiLine);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:151:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_ConfigLVEPin(uint32_t ConfigLVE);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:869:0,
+                 from include/stm32l5xx_hal_conf.h:294,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:50:1: error: unknown type name '__RAM_FUNC'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_EnableRunPowerDown(void);
+ ^~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:50:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'HAL_FLASHEx_EnableRunPowerDown'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_EnableRunPowerDown(void);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:51:1: error: unknown type name '__RAM_FUNC'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_DisableRunPowerDown(void);
+ ^~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:51:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'HAL_FLASHEx_DisableRunPowerDown'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_DisableRunPowerDown(void);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:52:1: error: unknown type name '__RAM_FUNC'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_OB_DBankConfig(uint32_t DBankConfig);
+ ^~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:52:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'HAL_FLASHEx_OB_DBankConfig'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_OB_DBankConfig(uint32_t DBankConfig);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_exti.h:345:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_EXTI_GetConfigLineAttributes(uint32_t ExtiLine, uint32_t *pLineAttributes);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:294:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:114:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef        Lock;              /*!< FLASH locking object */
+   ^~~~~~~~~~~~~~~
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:868:0,
+                 from include/stm32l5xx_hal_conf.h:294,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:128:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *PageError);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:294:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:880:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:129:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_Erase_IT(FLASH_EraseInitTypeDef *pEraseInit);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:881:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:130:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_OBProgram(FLASH_OBProgramInitTypeDef *pOBInit);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:895:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Unlock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ex.h:151:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef HAL_FLASHEx_ConfigLVEPin(uint32_t ConfigLVE);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:869:0,
+                 from include/stm32l5xx_hal_conf.h:294,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:50:1: error: unknown type name '__RAM_FUNC'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_EnableRunPowerDown(void);
+ ^~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:50:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'HAL_FLASHEx_EnableRunPowerDown'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_EnableRunPowerDown(void);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:51:1: error: unknown type name '__RAM_FUNC'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_DisableRunPowerDown(void);
+ ^~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:51:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'HAL_FLASHEx_DisableRunPowerDown'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_DisableRunPowerDown(void);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:896:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Lock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:52:1: error: unknown type name '__RAM_FUNC'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_OB_DBankConfig(uint32_t DBankConfig);
+ ^~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash_ramfunc.h:52:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'HAL_FLASHEx_OB_DBankConfig'
+ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_OB_DBankConfig(uint32_t DBankConfig);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:898:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_OB_Unlock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:294:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:880:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:899:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_OB_Lock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:881:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:900:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_OB_Launch(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:895:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Unlock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:931:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef FLASH_WaitForLastOperation(uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:306:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:203:3: error: expected specifier-qualifier-list before 'HAL_StatusTypeDef'
+   HAL_StatusTypeDef(*XferISR)(struct __I2C_HandleTypeDef *hi2c, uint32_t ITFlags, uint32_t ITSources);  /*!< I2C transfer IRQ handler function pointer */
+   ^~~~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:896:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_Lock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:570:0,
+                 from include/stm32l5xx_hal_conf.h:306,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:91:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_ConfigAnalogFilter(I2C_HandleTypeDef *hi2c, uint32_t AnalogFilter);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:898:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_OB_Unlock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:92:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_ConfigDigitalFilter(I2C_HandleTypeDef *hi2c, uint32_t DigitalFilter);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:899:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_OB_Lock(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:100:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_EnableWakeUp(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:900:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_FLASH_OB_Launch(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:101:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_DisableWakeUp(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_flash.h:931:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_DMA_StateTypeDef'?
+ HAL_StatusTypeDef FLASH_WaitForLastOperation(uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_DMA_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:306:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:203:3: error: expected specifier-qualifier-list before 'HAL_StatusTypeDef'
+   HAL_StatusTypeDef(*XferISR)(struct __I2C_HandleTypeDef *hi2c, uint32_t ITFlags, uint32_t ITSources);  /*!< I2C transfer IRQ handler function pointer */
+   ^~~~~~~~~~~~~~~~~
+In file included from include/stm32l5xx_hal_conf.h:306:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:581:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Init(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:570:0,
+                 from include/stm32l5xx_hal_conf.h:306,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:91:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_ConfigAnalogFilter(I2C_HandleTypeDef *hi2c, uint32_t AnalogFilter);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:582:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_DeInit(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:92:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_ConfigDigitalFilter(I2C_HandleTypeDef *hi2c, uint32_t DigitalFilter);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:604:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:100:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_EnableWakeUp(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:606:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c_ex.h:101:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2CEx_DisableWakeUp(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:608:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Transmit(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:306:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:581:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Init(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:609:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Receive(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:582:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_DeInit(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:610:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:604:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:606:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:612:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:608:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Transmit(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:614:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:609:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Receive(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:618:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:610:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:620:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:612:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:622:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:614:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:623:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:618:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:624:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Write_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:620:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:626:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Read_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:622:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:629:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:623:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:631:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:624:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Write_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:633:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:626:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Read_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:635:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:629:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:637:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_EnableListen_IT(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:631:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:638:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_DisableListen_IT(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:633:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:639:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Abort_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:635:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:642:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:644:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:637:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_EnableListen_IT(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:646:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:638:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_DisableListen_IT(I2C_HandleTypeDef *hi2c);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:647:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:639:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Abort_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:648:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Write_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:642:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:650:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Read_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:644:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:653:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:646:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:655:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:647:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:657:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:648:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Write_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:659:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:650:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Mem_Read_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:310:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:228:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Enable(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:653:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:229:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Disable(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:655:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:230:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_ConfigAssociativityMode(uint32_t AssociativityMode);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:657:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:231:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_DeInit(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_i2c.h:659:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:234:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Invalidate(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:29:0,
+                 from include/stm32l5xx_hal_conf.h:350,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:185:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_CoreInit(USB_TypeDef *USBx, USB_CfgTypeDef cfg);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:236:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Invalidate_IT(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:186:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DevInit(USB_TypeDef *USBx, USB_CfgTypeDef cfg);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:238:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_WaitForInvalidateComplete(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:187:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EnableGlobalInt(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:241:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Monitor_Start(uint32_t MonitorType);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:188:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DisableGlobalInt(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:242:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Monitor_Stop(uint32_t MonitorType);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:189:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_SetCurrentMode(USB_TypeDef *USBx, USB_ModeTypeDef mode);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:243:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_Monitor_Reset(uint32_t MonitorType);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:192:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_ActivateEndpoint(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:269:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_EnableRemapRegion(uint32_t Region, ICACHE_RegionConfigTypeDef *sRegionConfig);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:193:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DeactivateEndpoint(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:270:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef HAL_ICACHE_DisableRemapRegion(uint32_t Region);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:194:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EPStartXfer(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:29:0,
+                 from include/stm32l5xx_hal_conf.h:350,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:185:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_CoreInit(USB_TypeDef *USBx, USB_CfgTypeDef cfg);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:195:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EPSetStall(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:186:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DevInit(USB_TypeDef *USBx, USB_CfgTypeDef cfg);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:196:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EPClearStall(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:187:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EnableGlobalInt(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:199:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_SetDevAddress(USB_TypeDef *USBx, uint8_t address);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:188:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DisableGlobalInt(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:200:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DevConnect(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:189:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_SetCurrentMode(USB_TypeDef *USBx, USB_ModeTypeDef mode);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:201:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DevDisconnect(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:192:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_ActivateEndpoint(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:202:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_StopDevice(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:193:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DeactivateEndpoint(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:204:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_ActivateRemoteWakeup(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:194:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EPStartXfer(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:205:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DeActivateRemoteWakeup(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:350:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:107:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef         Lock;        /*!< PCD peripheral status             */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:195:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EPSetStall(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:148:0,
+                 from include/stm32l5xx_hal_conf.h:350,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:52:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_PCDEx_PMAConfig(PCD_HandleTypeDef *hpcd, uint16_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:196:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_EPClearStall(USB_TypeDef *USBx, USB_EPTypeDef *ep);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:56:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_ActivateLPM(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:57:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_DeActivateLPM(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:199:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_SetDevAddress(USB_TypeDef *USBx, uint8_t address);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:60:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_ActivateBCD(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:200:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DevConnect(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:61:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_DeActivateBCD(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:201:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DevDisconnect(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:350:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:218:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_Init(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:202:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_StopDevice(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:219:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DeInit(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:204:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_ActivateRemoteWakeup(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:309:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_Start(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_ll_usb.h:205:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_I2C_StateTypeDef'?
+ HAL_StatusTypeDef USB_DeActivateRemoteWakeup(USB_TypeDef *USBx);
+ ^~~~~~~~~~~~~~~~~
+ HAL_I2C_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:350:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:107:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef         Lock;        /*!< PCD peripheral status             */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:310:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_Stop(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:148:0,
+                 from include/stm32l5xx_hal_conf.h:350,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:52:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef  HAL_PCDEx_PMAConfig(PCD_HandleTypeDef *hpcd, uint16_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:333:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DevConnect(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:56:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_ActivateLPM(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:334:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DevDisconnect(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:57:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_DeActivateLPM(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:335:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_SetAddress(PCD_HandleTypeDef *hpcd, uint8_t address);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:60:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_ActivateBCD(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:336:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Open(PCD_HandleTypeDef *hpcd, uint8_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd_ex.h:61:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCDEx_DeActivateBCD(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:339:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Close(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:350:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:218:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_Init(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:340:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Receive(PCD_HandleTypeDef *hpcd, uint8_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:219:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DeInit(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:343:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Transmit(PCD_HandleTypeDef *hpcd, uint8_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:309:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_Start(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:347:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_SetStall(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:310:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_Stop(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:348:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_ClrStall(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:333:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DevConnect(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:349:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Flush(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:334:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DevDisconnect(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:350:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_ActivateRemoteWakeup(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:335:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_SetAddress(PCD_HandleTypeDef *hpcd, uint8_t address);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:351:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DeActivateRemoteWakeup(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:336:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Open(PCD_HandleTypeDef *hpcd, uint8_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr.h:419:0,
+                 from include/stm32l5xx_hal_conf.h:358,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:806:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_ControlVoltageScaling(uint32_t VoltageScaling);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:339:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Close(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:815:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:340:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Receive(PCD_HandleTypeDef *hpcd, uint8_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:816:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:343:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Transmit(PCD_HandleTypeDef *hpcd, uint8_t ep_addr,
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:817:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:347:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_SetStall(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:818:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:348:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_ClrStall(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:829:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_ConfigPVM(PWR_PVMTypeDef *sConfigPVM);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:349:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_EP_Flush(PCD_HandleTypeDef *hpcd, uint8_t ep_addr);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:833:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_DisableLowPowerRunMode(void);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:350:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_ActivateRemoteWakeup(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:847:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_ConfigSRAM2ContentRetention(uint32_t SRAM2ContentRetention);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pcd.h:351:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PCD_DeActivateRemoteWakeup(PCD_HandleTypeDef *hpcd);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:864:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_SMPS_SetMode(uint32_t OperatingMode);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr.h:419:0,
+                 from include/stm32l5xx_hal_conf.h:358,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:806:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_ControlVoltageScaling(uint32_t VoltageScaling);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:358:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr.h:445:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWR_ConfigPVD(PWR_PVDTypeDef *sConfigPVD);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:815:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr.h:477:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWR_GetConfigAttributes(uint32_t Item, uint32_t *pAttributes);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:366:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:176:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef           Lock;       /*!< RTC locking object       */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:816:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:716:0,
+                 from include/stm32l5xx_hal_conf.h:366,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1319:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTimeStamp(RTC_HandleTypeDef *hrtc, uint32_t TimeStampEdge, uint32_t RTC_TimeStampPin);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:817:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1320:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTimeStamp_IT(RTC_HandleTypeDef *hrtc, uint32_t TimeStampEdge, uint32_t RTC_TimeStampPin);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:818:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1321:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateTimeStamp(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:829:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_ConfigPVM(PWR_PVMTypeDef *sConfigPVM);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1322:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetInternalTimeStamp(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:833:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_DisableLowPowerRunMode(void);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1323:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateInternalTimeStamp(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:847:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_ConfigSRAM2ContentRetention(uint32_t SRAM2ContentRetention);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1324:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_GetTimeStamp(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTimeStamp, RTC_DateTypeDef *sTimeStampDate, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h:864:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWREx_SMPS_SetMode(uint32_t OperatingMode);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1326:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForTimeStampEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:358:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr.h:445:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWR_ConfigPVD(PWR_PVDTypeDef *sConfigPVD);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1338:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetWakeUpTimer(RTC_HandleTypeDef *hrtc, uint32_t WakeUpCounter, uint32_t WakeUpClock);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr.h:477:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'PCD_StateTypeDef'?
+ HAL_StatusTypeDef HAL_PWR_GetConfigAttributes(uint32_t Item, uint32_t *pAttributes);
+ ^~~~~~~~~~~~~~~~~
+ PCD_StateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:366:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:176:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef           Lock;       /*!< RTC locking object       */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1339:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetWakeUpTimer_IT(RTC_HandleTypeDef *hrtc, uint32_t WakeUpCounter, uint32_t WakeUpClock, uint32_t WakeUpAutoClr);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:716:0,
+                 from include/stm32l5xx_hal_conf.h:366,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1319:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTimeStamp(RTC_HandleTypeDef *hrtc, uint32_t TimeStampEdge, uint32_t RTC_TimeStampPin);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1340:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateWakeUpTimer(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1320:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTimeStamp_IT(RTC_HandleTypeDef *hrtc, uint32_t TimeStampEdge, uint32_t RTC_TimeStampPin);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1344:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForWakeUpTimerEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1321:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateTimeStamp(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1354:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetSmoothCalib(RTC_HandleTypeDef *hrtc, uint32_t SmoothCalibPeriod, uint32_t SmoothCalibPlusPulses, uint32_t SmoothCalibMinusPulsesValue);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1322:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetInternalTimeStamp(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1323:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateInternalTimeStamp(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1355:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetLowPowerCalib(RTC_HandleTypeDef *hrtc, uint32_t LowPowerCalib);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1324:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_GetTimeStamp(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTimeStamp, RTC_DateTypeDef *sTimeStampDate, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1356:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetSynchroShift(RTC_HandleTypeDef *hrtc, uint32_t ShiftAdd1S, uint32_t ShiftSubFS);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1326:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForTimeStampEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1357:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetCalibrationOutPut(RTC_HandleTypeDef *hrtc, uint32_t CalibOutput);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1338:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetWakeUpTimer(RTC_HandleTypeDef *hrtc, uint32_t WakeUpCounter, uint32_t WakeUpClock);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1358:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateCalibrationOutPut(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1339:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetWakeUpTimer_IT(RTC_HandleTypeDef *hrtc, uint32_t WakeUpCounter, uint32_t WakeUpClock, uint32_t WakeUpAutoClr);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1359:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetRefClock(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1340:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateWakeUpTimer(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1360:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateRefClock(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1344:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForWakeUpTimerEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1361:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_EnableBypassShadow(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1354:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetSmoothCalib(RTC_HandleTypeDef *hrtc, uint32_t SmoothCalibPeriod, uint32_t SmoothCalibPlusPulses, uint32_t SmoothCalibMinusPulsesValue);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1362:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DisableBypassShadow(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1355:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetLowPowerCalib(RTC_HandleTypeDef *hrtc, uint32_t LowPowerCalib);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1363:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_MonotonicCounterIncrement(RTC_HandleTypeDef *hrtc, uint32_t Instance);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1356:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetSynchroShift(RTC_HandleTypeDef *hrtc, uint32_t ShiftAdd1S, uint32_t ShiftSubFS);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1364:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_MonotonicCounterGet(RTC_HandleTypeDef *hrtc, uint32_t Instance, uint32_t *Value);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1357:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetCalibrationOutPut(RTC_HandleTypeDef *hrtc, uint32_t CalibOutput);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1375:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForAlarmBEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1358:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateCalibrationOutPut(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1383:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTamper(RTC_HandleTypeDef *hrtc, RTC_TamperTypeDef *sTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1359:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetRefClock(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1384:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetActiveTampers(RTC_HandleTypeDef *hrtc, RTC_ActiveTampersTypeDef *sAllTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1360:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateRefClock(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1385:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetActiveSeed(RTC_HandleTypeDef *hrtc, uint32_t *pSeed);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1361:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_EnableBypassShadow(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1386:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTamper_IT(RTC_HandleTypeDef *hrtc, RTC_TamperTypeDef *sTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1362:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DisableBypassShadow(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1387:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateTamper(RTC_HandleTypeDef *hrtc, uint32_t Tamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1363:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_MonotonicCounterIncrement(RTC_HandleTypeDef *hrtc, uint32_t Instance);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1388:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateActiveTampers(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1364:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_MonotonicCounterGet(RTC_HandleTypeDef *hrtc, uint32_t Instance, uint32_t *Value);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1389:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForTamperEvent(RTC_HandleTypeDef *hrtc, uint32_t Tamper, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1375:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForAlarmBEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1390:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetInternalTamper(RTC_HandleTypeDef *hrtc, RTC_InternalTamperTypeDef *sIntTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1383:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTamper(RTC_HandleTypeDef *hrtc, RTC_TamperTypeDef *sTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1391:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetInternalTamper_IT(RTC_HandleTypeDef *hrtc, RTC_InternalTamperTypeDef *sIntTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1384:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetActiveTampers(RTC_HandleTypeDef *hrtc, RTC_ActiveTampersTypeDef *sAllTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1392:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateInternalTamper(RTC_HandleTypeDef *hrtc, uint32_t IntTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1385:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetActiveSeed(RTC_HandleTypeDef *hrtc, uint32_t *pSeed);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1393:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForInternalTamperEvent(RTC_HandleTypeDef *hrtc, uint32_t IntTamper, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1386:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetTamper_IT(RTC_HandleTypeDef *hrtc, RTC_TamperTypeDef *sTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1430:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SecureModeGet(RTC_HandleTypeDef *hrtc, RTC_SecureStateTypeDef  *secureState);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1387:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateTamper(RTC_HandleTypeDef *hrtc, uint32_t Tamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1441:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PrivilegeModeSet(RTC_HandleTypeDef *hrtc, RTC_PrivilegeStateTypeDef *privilegeState);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1388:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateActiveTampers(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1442:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PrivilegeModeGet(RTC_HandleTypeDef *hrtc, RTC_PrivilegeStateTypeDef *privilegeState);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1389:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForTamperEvent(RTC_HandleTypeDef *hrtc, uint32_t Tamper, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:366:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:727:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_Init(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1390:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetInternalTamper(RTC_HandleTypeDef *hrtc, RTC_InternalTamperTypeDef *sIntTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:728:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_DeInit(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1391:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SetInternalTamper_IT(RTC_HandleTypeDef *hrtc, RTC_InternalTamperTypeDef *sIntTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:366:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:747:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1392:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_DeactivateInternalTamper(RTC_HandleTypeDef *hrtc, uint32_t IntTamper);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:748:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1393:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PollForInternalTamperEvent(RTC_HandleTypeDef *hrtc, uint32_t IntTamper, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:749:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetDate(RTC_HandleTypeDef *hrtc, RTC_DateTypeDef *sDate, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1430:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_SecureModeGet(RTC_HandleTypeDef *hrtc, RTC_SecureStateTypeDef  *secureState);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:750:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_GetDate(RTC_HandleTypeDef *hrtc, RTC_DateTypeDef *sDate, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1441:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PrivilegeModeSet(RTC_HandleTypeDef *hrtc, RTC_PrivilegeStateTypeDef *privilegeState);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:764:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetAlarm(RTC_HandleTypeDef *hrtc, RTC_AlarmTypeDef *sAlarm, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc_ex.h:1442:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTCEx_PrivilegeModeGet(RTC_HandleTypeDef *hrtc, RTC_PrivilegeStateTypeDef *privilegeState);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:765:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetAlarm_IT(RTC_HandleTypeDef *hrtc, RTC_AlarmTypeDef *sAlarm, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:366:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:727:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_Init(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:766:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_DeactivateAlarm(RTC_HandleTypeDef *hrtc, uint32_t Alarm);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:728:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_DeInit(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:767:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_GetAlarm(RTC_HandleTypeDef *hrtc, RTC_AlarmTypeDef *sAlarm, uint32_t Alarm, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:366:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:747:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:769:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_PollForAlarmAEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:748:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_GetTime(RTC_HandleTypeDef *hrtc, RTC_TimeTypeDef *sTime, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:779:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef   HAL_RTC_WaitForSynchro(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:749:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetDate(RTC_HandleTypeDef *hrtc, RTC_DateTypeDef *sDate, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:922:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef  RTC_EnterInitMode(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:750:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_GetDate(RTC_HandleTypeDef *hrtc, RTC_DateTypeDef *sDate, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:923:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef  RTC_ExitInitMode(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:386:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:144:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef            Lock;           /*!< Locking object                           */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:764:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetAlarm(RTC_HandleTypeDef *hrtc, RTC_AlarmTypeDef *sAlarm, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:763:0,
+                 from include/stm32l5xx_hal_conf.h:386,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi_ex.h:52:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPIEx_FlushRxFifo(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:765:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_SetAlarm_IT(RTC_HandleTypeDef *hrtc, RTC_AlarmTypeDef *sAlarm, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:386:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:774:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Init(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:766:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_DeactivateAlarm(RTC_HandleTypeDef *hrtc, uint32_t Alarm);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:775:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DeInit(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:767:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_GetAlarm(RTC_HandleTypeDef *hrtc, RTC_AlarmTypeDef *sAlarm, uint32_t Alarm, uint32_t Format);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:386:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:792:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:769:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_RTC_PollForAlarmAEvent(RTC_HandleTypeDef *hrtc, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:793:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:779:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef   HAL_RTC_WaitForSynchro(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:794:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_TransmitReceive(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:922:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef  RTC_EnterInitMode(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:796:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Transmit_IT(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rtc.h:923:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef  RTC_ExitInitMode(RTC_HandleTypeDef *hrtc);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:386:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:144:3: error: unknown type name 'HAL_LockTypeDef'
+   HAL_LockTypeDef            Lock;           /*!< Locking object                           */
+   ^~~~~~~~~~~~~~~
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:797:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Receive_IT(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:763:0,
+                 from include/stm32l5xx_hal_conf.h:386,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi_ex.h:52:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPIEx_FlushRxFifo(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:798:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_TransmitReceive_IT(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:386:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:774:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Init(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:800:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Transmit_DMA(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:775:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DeInit(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:801:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Receive_DMA(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from include/stm32l5xx_hal_conf.h:386:0,
+                 from include/stm32l5xx_hal.h:30,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:792:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:802:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_TransmitReceive_DMA(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:793:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:804:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DMAPause(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:794:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_TransmitReceive(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size,
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:805:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DMAResume(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:796:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Transmit_IT(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:806:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DMAStop(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:797:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Receive_IT(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:808:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Abort(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:798:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_TransmitReceive_IT(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:809:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Abort_IT(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:800:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Transmit_DMA(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161:0,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_icache.h:29,
+                 from include/uduino_config.h:1,
+                 from include/led.h:1,
+                 from src/led.c:1:
+include/stm32l5xx_hal.h:587:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_Init(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:801:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Receive_DMA(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:588:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_DeInit(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:802:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_TransmitReceive_DMA(SPI_HandleTypeDef *hspi, uint8_t *pTxData, uint8_t *pRxData,
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:591:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:804:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DMAPause(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:606:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef  HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:805:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DMAResume(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:645:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SYSCFG_EnableVREFBUF(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:806:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_DMAStop(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:663:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SYSCFG_GetLock(uint32_t *pItem);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+*** [.pio/build/nucleo_l552ze_q/src/led.o] Error 1
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:808:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Abort(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+/home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_spi.h:809:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SPI_Abort_IT(SPI_HandleTypeDef *hspi);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+In file included from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h:161:0,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_def.h:34,
+                 from /home/robert/.platformio/packages/framework-stm32cubel5/Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_gpio.h:29,
+                 from include/gpio.h:1,
+                 from src/gpio.c:9:
+include/stm32l5xx_hal.h:587:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_Init(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:588:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_DeInit(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:591:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:606:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef  HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:645:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SYSCFG_EnableVREFBUF(void);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+include/stm32l5xx_hal.h:663:1: error: unknown type name 'HAL_StatusTypeDef'; did you mean 'HAL_RTCStateTypeDef'?
+ HAL_StatusTypeDef HAL_SYSCFG_GetLock(uint32_t *pItem);
+ ^~~~~~~~~~~~~~~~~
+ HAL_RTCStateTypeDef
+*** [.pio/build/nucleo_l552ze_q/src/gpio.o] Error 1
+========================== [FAILED] Took 7.81 seconds ==========================
